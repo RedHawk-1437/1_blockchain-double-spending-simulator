@@ -1,20 +1,17 @@
 # config.py
 # Central configuration for the simulator.
+# Instead of hardcoding values inside blockchain.py or app.py,
+# we keep them here for easy modification and clarity.
 
 import os
 
-# Proof-of-Work difficulty (leading zeros required)
+# Blockchain mining difficulty (number of leading zeros in proof-of-work).
+# Higher value = harder mining, slower block confirmation.
 DIFFICULTY = int(os.getenv("POW_DIFFICULTY", 3))
 
-# Mining reward (float). Can be overridden with env var MINING_REWARD.
-MINING_REWARD = float(os.getenv("MINING_REWARD", 10.0))
+# Mining reward for successfully mining a block.
+# Incentivizes miners and prevents network collapse.
+MINING_REWARD = float(os.getenv("MINING_REWARD", 15.0))
 
 # Default currency used for mining rewards and default transactions.
 DEFAULT_CURRENCY = os.getenv("DEFAULT_CURRENCY", "USDT")
-
-# Network simulation latency bounds (seconds)
-LATENCY_MIN = float(os.getenv("LATENCY_MIN", 0.0))
-LATENCY_MAX = float(os.getenv("LATENCY_MAX", 5.0))
-
-# Whether to validate transactions strictly (signatures). Not used here, placeholder.
-STRICT_TX_VALIDATION = os.getenv("STRICT_TX_VALIDATION", "0") == "1"

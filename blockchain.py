@@ -1,12 +1,11 @@
 # blockchain.py
 """
 Blockchain core with currency-aware transactions and configurable mining reward.
-
 Each transaction is a dictionary:
 {
-  "sender": "Alice",
-  "receiver": "Bob",
-  "amount": 12.5,
+  "sender": "Raja Khurram",
+  "receiver": "Raja Shahzad",
+  "amount": 100.0,
   "currency": "BTC"
 }
 """

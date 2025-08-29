@@ -1,16 +1,30 @@
+# ================================================
+# requirements.txt
+# Python Dependencies for Blockchain Simulator
+# ================================================
+
+# Python Version
 python>=3.10
-blinker==1.9.0
-certifi==2025.8.3
-charset-normalizer==3.4.3
-click==8.2.2
-colorama==0.4.6
-decorator==5.2.1
+
+# Flask Framework (Web Server + Routing + Templates)
 Flask==3.1.2
-idna==3.10
+
+# Flask Core Dependencies
+click==8.2.2
 itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.2
-requests==2.32.5
-self==2020.12.3
-urllib3==2.5.0
 Werkzeug==3.1.3
+blinker==1.9.0
+
+# HTTP Requests Library (for Node communication & broadcasting)
+requests==2.32.5
+urllib3==2.5.0
+idna==3.10
+charset-normalizer==3.4.3
+certifi==2025.8.3
+
+# Extra Utilities
+colorama==0.4.6   # Terminal text coloring (not critical)
+decorator==5.2.1  # Utility for wrapping functions
+self==2020.12.3   # Packaging utility (not critical)
