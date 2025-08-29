@@ -1,5 +1,5 @@
 import unittest
-from blockchain import Blockchain, Block
+from blockchain import Blockchain
 from attack import AttackerNode
 
 
